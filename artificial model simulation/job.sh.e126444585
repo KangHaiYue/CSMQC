@@ -1,0 +1,88 @@
+Loading python3/3.11.7
+  Loading requirement: intel-mkl/2023.2.0
+
+------------------------------------------------------------------------
+Job 126444585 has exceeded memory allocation on node gadi-cpu-clx-0448.gadi.nci.org.au
+Process "bash", pid 1640394, rss 3588096, vmem 23932928
+Process "126444585.gadi-", pid 1646455, rss 3248128, vmem 10252288
+Process "python3", pid 1646944, rss 102162432, vmem 1252851712
+Process "python3", pid 1651259, rss 1441959936, vmem 2471923712
+Process "python3", pid 1651261, rss 1442226176, vmem 2471923712
+Process "python3", pid 1651262, rss 1442000896, vmem 2471923712
+Process "python3", pid 1651265, rss 1441988608, vmem 2471923712
+Process "python3", pid 1651268, rss 1441996800, vmem 2471923712
+Process "python3", pid 1651269, rss 1441726464, vmem 2471923712
+Process "python3", pid 1651273, rss 1441988608, vmem 2471923712
+Process "python3", pid 1651274, rss 1442000896, vmem 2471923712
+Process "python3", pid 1651278, rss 1442000896, vmem 2471923712
+Process "python3", pid 1651280, rss 1442000896, vmem 2471923712
+Process "python3", pid 1651283, rss 1442041856, vmem 2471923712
+Process "python3", pid 1651284, rss 1442009088, vmem 2471923712
+Process "python3", pid 1651288, rss 1442009088, vmem 2471923712
+Process "python3", pid 1651289, rss 1441742848, vmem 2471923712
+Process "python3", pid 1651293, rss 1442009088, vmem 2471923712
+Process "python3", pid 1651297, rss 1442017280, vmem 2471923712
+Process "python3", pid 1651301, rss 1442009088, vmem 2471923712
+Process "python3", pid 1651304, rss 1442009088, vmem 2471923712
+Process "python3", pid 1651307, rss 1442013184, vmem 2471981056
+Process "python3", pid 1651312, rss 1442009088, vmem 2471981056
+Process "python3", pid 1651314, rss 1441738752, vmem 2471981056
+Process "python3", pid 1651317, rss 1441972224, vmem 2471981056
+Process "python3", pid 1651320, rss 1441996800, vmem 2471981056
+Process "python3", pid 1651324, rss 1442000896, vmem 2471981056
+Process "python3", pid 1651328, rss 1441996800, vmem 2471981056
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+/home/563/hk7549/synthetic_model_test/reset.py:566: UserWarning: number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.
+  warnings.warn('number of qubits exceeded maximum precomputed matrices, measurement_matrices attribute not established.')
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/apps/python3/3.11.7/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/apps/python3/3.11.7/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/home/563/hk7549/synthetic_model_test/detection_rate_functions.py", line 193, in false_alarm_rate_mk2
+    prob0 = test.prob0(rotate_qubits[0])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/563/hk7549/synthetic_model_test/reset.py", line 1002, in prob0
+    full_dm_0 = self.measurement_matrices[q][0]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumSim' object has no attribute 'measurement_matrices'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/563/hk7549/synthetic_model_test/test.py", line 263, in <module>
+    false_alarm_task()
+  File "/home/563/hk7549/synthetic_model_test/test.py", line 55, in false_alarm_task
+    for result in p.map(false_alarm_rate_mk2, inputs):
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/python3/3.11.7/lib/python3.11/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/python3/3.11.7/lib/python3.11/multiprocessing/pool.py", line 774, in get
+    raise self._value
+AttributeError: 'QuantumSim' object has no attribute 'measurement_matrices'

@@ -1,0 +1,12 @@
+Loading python3/3.11.7
+  Loading requirement: intel-mkl/2023.2.0
+Traceback (most recent call last):
+  File "/home/563/hk7549/synthetic_model_test/test.py", line 346, in <module>
+    task_detection_failing_rate_2d_8sq()
+  File "/home/563/hk7549/synthetic_model_test/test.py", line 316, in task_detection_failing_rate_2d_8sq
+    detection_rates_dict[1] = np.reshape(np.mean([detection_rate_dict[4][1][(rate, two_q_angle)] for two_q_angle in two_q_crosstalk_angles for rate in ZZ_rates], axis=1), (len(two_q_crosstalk_angles), len(ZZ_rates)))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/563/hk7549/synthetic_model_test/test.py", line 316, in <listcomp>
+    detection_rates_dict[1] = np.reshape(np.mean([detection_rate_dict[4][1][(rate, two_q_angle)] for two_q_angle in two_q_crosstalk_angles for rate in ZZ_rates], axis=1), (len(two_q_crosstalk_angles), len(ZZ_rates)))
+                                                  ~~~~~~~~~~~~~~~~~~~~~~^^^
+KeyError: 1

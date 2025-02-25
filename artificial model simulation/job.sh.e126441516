@@ -1,0 +1,36 @@
+Loading python3/3.11.7
+  Loading requirement: intel-mkl/2023.2.0
+
+------------------------------------------------------------------------
+Job 126441516 has exceeded memory allocation on node gadi-cpu-clx-2550.gadi.nci.org.au
+Process "bash", pid 771991, rss 3518464, vmem 23932928
+Process "126441516.gadi-", pid 772057, rss 3186688, vmem 10252288
+Process "python3", pid 772085, rss 98111488, vmem 1252851712
+Process "python3", pid 772089, rss 1439903744, vmem 2471976960
+Process "python3", pid 772090, rss 1439760384, vmem 2471976960
+Process "python3", pid 772091, rss 1440231424, vmem 2471976960
+Process "python3", pid 772092, rss 1439875072, vmem 2471976960
+Process "python3", pid 772093, rss 1440538624, vmem 2471976960
+Process "python3", pid 772094, rss 1440038912, vmem 2471976960
+Process "python3", pid 772095, rss 1439907840, vmem 2471976960
+Process "python3", pid 772096, rss 1439514624, vmem 2471976960
+Process "python3", pid 772097, rss 1440104448, vmem 2471976960
+Process "python3", pid 772098, rss 1440149504, vmem 2471976960
+Process "python3", pid 772099, rss 1440436224, vmem 2471976960
+Process "python3", pid 772100, rss 1439838208, vmem 2471976960
+Process "python3", pid 772101, rss 1440452608, vmem 2471976960
+Process "python3", pid 772102, rss 1440055296, vmem 2471976960
+Process "python3", pid 772103, rss 1440448512, vmem 2471976960
+Process "python3", pid 772104, rss 1440288768, vmem 2471976960
+Process "python3", pid 772105, rss 1440374784, vmem 2471976960
+Process "python3", pid 772106, rss 1439551488, vmem 2471976960
+Process "python3", pid 772107, rss 1440169984, vmem 2472046592
+Process "python3", pid 772108, rss 1440677888, vmem 2472046592
+Process "python3", pid 772109, rss 1440391168, vmem 2472046592
+Process "python3", pid 772110, rss 1439567872, vmem 2472046592
+Process "python3", pid 772111, rss 1439539200, vmem 2472046592
+Process "python3", pid 772112, rss 1440440320, vmem 2472046592
+Process "python3", pid 772113, rss 1439850496, vmem 2472046592
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
